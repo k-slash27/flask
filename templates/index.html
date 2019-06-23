@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>疲労度(%)</h1>
+<h1 class="text-center" id="hello">Ready...</h1>
+<hr/>
+<pre>
+1. getEnraResponse()の結果を取得 [Js]
+2. DBにアクセスし、1.の結果が蓄積されたテーブルから計算に必要なデータを取得 [Python]
+3. 1.と2.のデータを用いて疲労度を算出 [Python]
+4. 2.〜3.をgetEnraResponse()実行時毎に繰り返す [Js(ajax)]
+</pre>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../static/json.js"></script>
+{% endblock %}
