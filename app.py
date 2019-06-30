@@ -24,7 +24,7 @@ def lower_conversion():
     db_session.commit()
     # calc degree (mock)
     degree = (data - recent_data.degree) * 100
-    return_data = {"result":degree}
+    return_data = {"fatigue":degree, "enra":data}
     return jsonify(ResultSet=json.dumps(return_data))
 
 if __name__ == "__main__":
